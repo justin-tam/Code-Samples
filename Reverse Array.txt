@@ -1,0 +1,45 @@
+/*  
+ *  Project: Reverse Array Problem
+ *  Class: ReverseArray
+ *  Written By: Justin Tam
+ *  Date: October 2016
+ *  Summary: Reverses a set character array.
+*/
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+public class ReverseArray
+{
+	public static void Main(string[] args)
+	{
+		//Your code goes here
+		reverseArray(new char[] {'p', 'e', 'r', 'f', 'e', 'c', 't', ' ', 'm', 'a', 'k', 'e', 's', ' ', 'p', 'r', 'a', 'c', 't', 'i', 'c', 'e'});
+	}
+	static void reverseArray(char[] words)
+	{
+		string temp = "";
+		string result = "";
+		
+		for (int x=words.Length-1;x>=0;x--)
+		{
+			if (words[x] != ' ')
+				temp += words[x];
+			else {
+				result += Reversal(temp) + " ";
+				temp = "";
+			}
+			if (x == 0)
+				result += Reversal(temp);
+		}
+		Console.WriteLine(result);
+	}
+	static string Reversal(string str)
+	{
+		char[] charArray = str.ToCharArray();
+		Array.Reverse(charArray);
+		return new string(charArray);
+	}
+}

@@ -1,0 +1,74 @@
+/*  
+ *  Project: Prime Number Solver
+ *  Class: FindPrime
+ *  Written By: Justin Tam
+ *  Date: October 2016
+ *  Summary: Find out if a number is prime using recursion (Autobots, rollout! -Optimus Prime)
+*/
+
+using System;
+
+public class FindPrime
+{
+    public static void Main(string[] args)
+    {
+    	//Keep Main simple
+    	GetInput();
+    }
+    
+    //Handles user interface
+   	private static void GetInput()
+   	{
+    	var input = "";
+    	int num;
+    	//Request user input
+    	Console.Write("Please input a positive integer greater than 1: ");
+    	//Handle input in case it is not a positive integer
+    	try
+    	{
+    		input = Console.ReadLine();
+    		num = Convert.ToInt32(input);
+    		//If positive, do something
+    		if (num > 1)
+    		{
+    			if (CheckPrime(num, num/2))
+					Console.WriteLine(input + " is prime.\n");
+				else
+					Console.WriteLine(input + " is not prime.\n");
+    		}
+    		//If not positive, return error
+			else
+				Console.WriteLine(input + " is not a positive integer greater than 1. Please try again.\n");
+    	}
+    	catch (Exception e) //If user inputs a noninteger, return error 
+		{
+			Console.WriteLine(input + " is not a positive integer. Please try again.\n");
+		}
+		//Keep asking for input
+		GetInput();
+   	}
+   	
+   	//Checks if input is prime
+   	//num1 is the original number, num2 is the recursive divisor
+   	private static bool CheckPrime(int num1, int num2)
+   	{
+		//If num2 reaches 1, then num1 is prime, return true
+   		if (num2 == 1)
+   		{
+   			return true;
+   		}
+   		else
+   		{
+			//If num1 divides perfectly into num2, num1 is not prime, return false
+   			if (num1 % num2 == 0)
+   			{
+   				return false;
+   			}
+			//If num1 does not divide perfectly into num2, continue checking for potential divisors
+   			else
+   			{
+   				return CheckPrime(num1,num2-1);
+   			}
+   		}
+   	}
+}

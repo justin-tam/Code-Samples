@@ -1,0 +1,35 @@
+/*  
+ *  Project: Wildcard Search Problem
+ *  Class: SearchWildcard
+ *  Written By: Justin Tam
+ *  Date: October 2016
+ *  Summary: Returns wildcard search results from set array
+*/
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+public class SearchWildcard
+{
+	//Example Array
+	public static string[] array = {"cat","dog","bat","that","sand"};
+	//Example Input
+	public static string search = "*";
+	
+	public static void Main(string[] args)
+	{
+		//Your code goes here
+		for (int x=0;x<array.Length;x++)
+		{
+			Boolean check = Regex.IsMatch(array[x], WildCardToRegular(search));
+			if (check)
+				Console.WriteLine(array[x]);
+		}
+	}
+	
+	private static String WildCardToRegular(String value) {
+		return "^" + Regex.Escape(value).Replace("\\*", ".*") + "$"; 
+	}
+}
