@@ -6,17 +6,24 @@ public class Program
 {
 	public static void Main()
 	{
+		// This can be altered to change how the input is received.
 		FindMostCommon("Hello World This is a great world, This World is simply great");
 	}
 	
 	public static void FindMostCommon(string input) {
-		var list = Regex.Split(input.ToLower(), @"\W+")
-					.GroupBy(x => x)
-					.Select(x => new { Count = x.Count(), Word = x.Key })
-					.OrderByDescending(x => x.Count).ToList().Take(3);
-		
-		foreach (var item in list) {
-			Console.WriteLine(item.Word + " : " + item.Count);
+		// This can be altered to include conditionals and exceptions
+		if (input != "") {
+			var list = Regex.Split(input.ToLower(), @"\W+")
+						.GroupBy(x => x)
+						.Select(x => new { Count = x.Count(), Word = x.Key })
+						.OrderByDescending(x => x.Count).ToList().Take(3);
+
+			foreach (var item in list) {
+				Console.WriteLine(item.Word + " : " + item.Count);
+			}
+		}
+		else {
+			Console.WriteLine("Error. Please input a string!");
 		}
 	}
 }
