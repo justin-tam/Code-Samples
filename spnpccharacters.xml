@@ -5176,7 +5176,7 @@
       <equipment slot="Item2"
                  id="Item.hunting_bow" />
       <equipment slot="Item3"
-           id="Item.default_arrows" />
+                 id="Item.default_arrows" />
       <equipment slot="Body"
                  id="Item.aserai_civil_e" />
       <equipment slot="Head"
@@ -5215,7 +5215,7 @@
       <equipment slot="Item2"
                  id="Item.hunting_bow" />
       <equipment slot="Item3"
-           id="Item.default_arrows" />
+                 id="Item.default_arrows" />
       <equipment slot="Body"
                  id="Item.aserai_civil_e" />
       <equipment slot="Head"
@@ -5251,7 +5251,7 @@
       <equipment slot="Item0"
                  id="Item.hunting_bow" />
       <equipment slot="Item1"
-           id="Item.default_arrows" />
+                 id="Item.default_arrows" />
       <equipment slot="Body"
                  id="Item.aserai_civil_e" />
       <equipment slot="Leg"
@@ -6044,7 +6044,7 @@
       <equipment slot="Item2"
                  id="Item.hunting_bow" />
       <equipment slot="Item3"
-           id="Item.default_arrows" />
+                 id="Item.default_arrows" />
       <equipment slot="Body"
                  id="Item.empire_warrior_padded_armor_d" />
       <equipment slot="Leg"
@@ -6081,7 +6081,7 @@
       <equipment slot="Item2"
                  id="Item.hunting_bow" />
       <equipment slot="Item3"
-           id="Item.default_arrows" />
+                 id="Item.default_arrows" />
       <equipment slot="Body"
                  id="Item.empire_warrior_padded_armor_d" />
       <equipment slot="Leg"
@@ -6439,7 +6439,7 @@
       <equipment slot="Item2"
                  id="Item.hunting_bow" />
       <equipment slot="Item3"
-           id="Item.default_arrows" />
+                 id="Item.default_arrows" />
       <equipment slot="Body"
                  id="Item.eastern_studded_leather" />
       <equipment slot="Leg"
@@ -6473,7 +6473,7 @@
       <equipment slot="Item2"
                  id="Item.hunting_bow" />
       <equipment slot="Item3"
-           id="Item.default_arrows" />
+                 id="Item.default_arrows" />
       <equipment slot="Body"
                  id="Item.eastern_studded_leather" />
       <equipment slot="Leg"
@@ -6836,7 +6836,7 @@
                  id="Item.small_flat_heater_shield" />
       <equipment slot="Item2"
                  id="Item.hunting_bow" />
-            <equipment slot="Item3"
+      <equipment slot="Item3"
                  id="Item.default_arrows" />
       <equipment slot="Body"
                  id="Item.padded_leather_shirt" />
@@ -6871,7 +6871,7 @@
                  id="Item.small_flat_heater_shield" />
       <equipment slot="Item2"
                  id="Item.hunting_bow" />
-            <equipment slot="Item3"
+      <equipment slot="Item3"
                  id="Item.default_arrows" />
       <equipment slot="Body"
                  id="Item.padded_leather_shirt" />
@@ -7231,7 +7231,7 @@
                  id="Item.small_flat_heater_shield" />
       <equipment slot="Item2"
                  id="Item.hunting_bow" />
-            <equipment slot="Item3"
+      <equipment slot="Item3"
                  id="Item.default_arrows" />
       <equipment slot="Body"
                  id="Item.northern_padded_gambeson" />
@@ -17120,7 +17120,7 @@
                  id="Item.leather_round_shield" />
       <equipment slot="Item2"
                  id="Item.northern_throwing_axe_1_t1" />
-            <equipment slot="Item3"
+      <equipment slot="Item3"
                  id="Item.northern_spear_3_t4" />
       <equipment slot="Body"
                  id="Item.nordic_hauberk" />
@@ -19370,7 +19370,7 @@
                  id="Item.bolt_a" />
       <equipment slot="Item2"
                  id="Item.vlandia_sword_4_t4" />
-      <equipment slot="Item2"
+      <equipment slot="Item3"
                  id="Item.pavise_shield" />
       <equipment slot="Body"
                  id="Item.banded_leather_over_mail" />
@@ -19390,7 +19390,7 @@
                  id="Item.bolt_a" />
       <equipment slot="Item2"
                  id="Item.vlandia_sword_4_t4" />
-      <equipment slot="Item2"
+      <equipment slot="Item3"
                  id="Item.pavise_shield" />
       <equipment slot="Body"
                  id="Item.banded_leather_over_mail" />
@@ -19410,7 +19410,7 @@
                  id="Item.bolt_a" />
       <equipment slot="Item2"
                  id="Item.vlandia_sword_4_t4" />
-      <equipment slot="Item2"
+      <equipment slot="Item3"
                  id="Item.pavise_shield" />
       <equipment slot="Body"
                  id="Item.banded_leather_over_mail" />
@@ -23752,7 +23752,7 @@
                  id="Item.scarf" />
       <equipment slot="Gloves"
                  id="Item.leather_gloves" />
-      <equipment slot="Item0"
+      <equipment slot="Item2"
                  id="Item.bolt_a" />
       <equipment slot="Item1"
                  id="Item.pavise_shield" />
